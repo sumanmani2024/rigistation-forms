@@ -5,7 +5,7 @@
 {% block body_block %}
     <center>
         <h1>welcome to registation page</h1>
-            <form method="POST">
+            <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{uf.as_p}}
                 {{pf.as_p}}
